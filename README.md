@@ -4,7 +4,7 @@ Unity Version - 6000.4.3f1
 Uses - URP
 
 Contributors:
-Liam Kaye
-Vega Smith
-Jasmine Smith
+Liam Kaye,
+Vega Smith,
+Jasmine Smith,
 Meagan Shaw
