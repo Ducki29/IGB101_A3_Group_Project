@@ -65631,7 +65631,7 @@ MonoBehaviour:
   upAngleView: 45
   downAngleView: 65
   MaxViewDistance: 15
-  MinViewDistance: 1
+  MinViewDistance: 5
   ZoomRate: 20
   cameraTargetHeight: 1
 --- !u!114 &1353250328
@@ -71921,7 +71921,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -316.9, y: 147.8}
+  m_AnchoredPosition: {x: -258.2, y: 124.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1527082201
