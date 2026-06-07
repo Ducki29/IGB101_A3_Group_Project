@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
     public int maxPickups = 5;
     public bool levelComplete = false;
 
+    public AudioSource[] audioSources;
+    public float audioProximity = 5f;
+
     public Text pickupText;
 
 
@@ -25,9 +28,11 @@ public class GameManager : MonoBehaviour
     {
         LevelCompleteCheck();
         UpdateGUI();
+        playAudio();
 
     }
-private void LevelCompleteCheck(){
+    
+    private void LevelCompleteCheck(){
         if (currentPickup >= maxPickups)
             levelComplete = true;
         else 
@@ -36,9 +41,27 @@ private void LevelCompleteCheck(){
         
     }
 
-private void UpdateGUI()
+    private void UpdateGUI()
     {
         pickupText.text = "Pickups: " + currentPickup + "/" + maxPickups;
     }
 
-}
+    private void playAudio()
+    {
+        for (int i = 0; i < audioSources.Length; i++)
+        {
+            if (Vector3.Distance(player.transform.position, audioSources[i].transform.position) <= audioProximity)
+            {
+                if (!audioSources[i].isPlaying)
+                {
+                    audioSources[i].Play();
+                }
+
+            }
+
+        }
+    }
+
+
+
+}   

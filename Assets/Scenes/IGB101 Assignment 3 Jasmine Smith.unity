@@ -6988,7 +6988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 367cace377d404819940fe5995760958, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelSwitch
-  nextLevel: Main
+  nextLevel: IGB101 Assignment 3 Liam Kaye
 --- !u!1 &477734384
 GameObject:
   m_ObjectHideFlags: 0
